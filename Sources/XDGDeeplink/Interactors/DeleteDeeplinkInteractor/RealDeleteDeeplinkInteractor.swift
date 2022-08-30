@@ -1,5 +1,5 @@
 //
-//  RealDeletePushNotificationInteractor.swift
+//  RealDeleteDeeplinkInteractor.swift
 //  
 //
 //  Created by Oanea, George on 30.08.2022.
@@ -8,16 +8,16 @@
 import Combine
 import Resolver
 
-struct RealDeletePushNotificationInteractor {
+struct RealDeleteDeeplinkInteractor {
 
     // MARK: - Dependencies
 
     @Injected private var repository: DeeplinkRepository
 }
 
-extension RealDeletePushNotificationInteractor: DeletePushNotificationInteractor {
+extension RealDeleteDeeplinkInteractor: DeleteDeeplinkInteractor {
 
-    // MARK: - DeletePushNotificationInteractor
+    // MARK: - DeleteDeeplinkInteractor
 
     public func execute() -> AnyPublisher<Void, Never> {
         repository.deleteLatestDeeplink()

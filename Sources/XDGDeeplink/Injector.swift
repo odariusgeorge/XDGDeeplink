@@ -16,7 +16,7 @@ public struct Injector {
         Resolver.register { RealPostDeeplinkInteractor() as PostDeeplinkInteractor }
         Resolver.register { RealPostDynamicLinkDeeplinkInteractor() as PostDynamicLinkDeeplinkInteractor }
         Resolver.register { RealPostNotificationDeepLinkInteractor() as PostNotificationDeepLinkInteractor }
-        Resolver.register { RealDeletePushNotificationInteractor() as DeletePushNotificationInteractor }
+        Resolver.register { RealDeleteDeeplinkInteractor() as DeleteDeeplinkInteractor }
     }
 }
 
